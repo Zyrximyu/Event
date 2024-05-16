@@ -1,0 +1,1150 @@
+/* ================================================= */
+/* ------------------ General CSS ------------------ */
+/* ================================================= */
+
+body {
+    color: #333333;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    background: #fff;
+}
+
+a {
+    color: #D4AF37;
+    transition: 0.5s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #D4AF37;
+    outline: none;
+    text-decoration: none;
+}
+
+p {
+    padding: 0;
+    margin: 0 0 30px 0;
+    letter-spacing: .5px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    color: #D4AF37;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+h4,
+h5,
+h6 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: #D4AF37;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #D4AF37;
+    border-radius: 30px;
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 11;
+}
+
+.back-to-top i {
+    padding-top: 12px;
+    color: #fff;
+}
+
+#fp-nav ul li a span {
+    background: #D4AF37;
+}
+
+#fp-nav ul li .fp-tooltip {
+    color: #D4AF37;
+    margin-top: 0;
+    font-size: 12px;
+}
+
+/* ================================================= */
+/* ---------------- Nav Header CSS ----------------- */
+/* ================================================= */
+
+#header {
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    z-index: 2;
+}
+
+.main-menu {
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.main-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu ul li {
+    display: inline-block;
+}
+
+.main-menu ul li:hover a,
+.main-menu ul li.active a {
+    color: #ffffff;
+}
+
+.main-menu ul li a {
+    color: #D4AF37;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 0 15px;
+    line-height: 60px;
+    display: block;
+    transition: color .25s ease, background-color .25s ease;
+}
+.mobile-menu-btn {
+    color: #D4AF37;
+    text-align: center;
+    font-size: 30px;
+    line-height: 57px;
+    display: none;
+    white-space: nowrap;
+}
+
+.mobile-menu-btn i {
+    cursor: pointer;
+}
+
+.mobile-menu {
+    padding-top: 60px;
+    padding-bottom: 15px;
+    display: none;
+    background: #222222;
+    border-top: #343434;
+}
+
+.mobile-menu .top-menu {
+    display: block;
+}
+
+.mobile-menu .top-menu ul {
+    padding: 0;
+}
+
+.mobile-menu .top-menu ul li {
+    display: block;
+    text-align: center;
+}
+
+.mobile-menu .top-menu ul li a {
+    padding: 0;
+    line-height: 40px;
+}
+
+.mobile-menu .top-menu ul li a:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 767.98px) {
+    .main-menu {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+}
+
+/* ================================================= */
+/* ----------------- Intro Section ----------------- */
+/* ================================================= */
+
+#intro {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+}
+
+#intro .carousel-item {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#intro .carousel-item::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#intro .carousel-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#intro .carousel-background img {
+    max-width: 100%;
+}
+
+#intro .carousel-content {
+    text-align: center;
+}
+
+#intro h1 {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 100px;
+    font-weight: 900;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+}
+
+#intro h2 {
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 50px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+#intro p {
+    width: 100%;
+    margin: 15px auto 0 auto;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+#intro h4 {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+@media (max-width: 767.98px) {
+    #intro h1 {
+        margin-bottom: 15px;
+        font-size: 70px;
+        font-weight: 700;
+        letter-spacing: 10px;
+    }
+
+    #intro h2 {
+        font-size: 40px;
+    }
+
+    #intro p {
+        font-size: 22px;
+    }
+
+    #intro h4 {
+        margin-bottom: 25px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #intro h1 {
+        margin-bottom: 10px;
+        font-size: 50px;
+        font-weight: 500;
+        letter-spacing: 5px;
+    }
+
+    #intro h2 {
+        font-size: 30px;
+    }
+
+    #intro p {
+        font-size: 18px;
+    }
+
+    #intro h4 {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+}
+
+#intro .carousel-fade {
+    overflow: hidden;
+}
+
+#intro .carousel-fade .carousel-inner .carousel-item {
+    transition-property: opacity;
+}
+
+#intro .carousel-fade .carousel-inner .carousel-item,
+#intro .carousel-fade .carousel-inner .active.carousel-item-left,
+#intro .carousel-fade .carousel-inner .active.carousel-item-right {
+    opacity: 0;
+}
+
+#intro .carousel-fade .carousel-inner .active,
+#intro .carousel-fade .carousel-inner .carousel-item-next.carousel-item-left,
+#intro .carousel-fade .carousel-inner .carousel-item-prev.carousel-item-right {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#intro .carousel-fade .carousel-inner .carousel-item-next,
+#intro .carousel-fade .carousel-inner .carousel-item-prev,
+#intro .carousel-fade .carousel-inner .active.carousel-item-left,
+#intro .carousel-fade .carousel-inner .active.carousel-item-right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+#intro .carousel-control-prev,
+#intro .carousel-control-next {
+    width: 10%;
+}
+
+#intro .carousel-control-next-icon,
+#intro .carousel-control-prev-icon {
+    width: 50px;
+    height: 50px;
+    padding: 9px;
+    background: #D4AF37;
+    font-size: 32px;
+    line-height: 1;
+    border-radius: 30px;
+}
+
+#intro .carousel-indicators li {
+    cursor: pointer;
+}
+
+#intro .btn-get-started {
+    display: inline-block;
+    padding: 8px 30px;
+    margin: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    color: #ffffff;
+    background: #D4AF37;
+    border-radius: 30px;
+}
+
+#intro .btn-get-started:hover {
+    background: #ffffff;
+    color: #D4AF37;
+}
+
+/* ================================================= */
+/* ---------------- Banner Section ----------------- */
+/* ================================================= */
+
+.banner {
+    background: url("../img/page-bg.jpg") center top no-repeat;
+    background-size: cover;
+    padding: 100px 0 80px 0;
+    position: relative;
+    text-align: center;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(000, 000, 000, 0.7);
+}
+
+.banner .container {
+    position: relative;
+    z-index: 9;
+}
+
+.banner h1 {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 80px;
+    font-weight: 900;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+}
+
+.banner span {
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+}
+
+@media (max-width: 991.98px) {
+    .banner h1 {
+        font-size: 65px;
+        font-weight: 700;
+        letter-spacing: 10px;
+    }
+
+    .banner span {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .banner h1 {
+        font-size: 50px;
+        font-weight: 700;
+        letter-spacing: 10px;
+    }
+
+    .banner span {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .banner h1 {
+        font-size: 35px;
+        font-weight: 500;
+        letter-spacing: 5px;
+    }
+
+    .banner span {
+        font-size: 20px;
+    }
+}
+
+
+/* ================================================= */
+/* -------------------- Section -------------------- */
+/* ================================================= */
+
+.section-2 {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(256, 256, 256, 0.85)), to(rgba(256, 256, 256, 0.85))), url("../img/section-2.jpg");
+    background: linear-gradient(90deg, rgba(256, 256, 256, 0.85) 0%, rgba(256, 256, 256, 0.85) 100%), url("../img/section-2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-3 {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(256, 256, 256, 0.85)), to(rgba(256, 256, 256, 0.85))), url("../img/section-2.jpg");
+    background: linear-gradient(90deg, rgba(256, 256, 256, 0.85) 0%, rgba(256, 256, 256, 0.85) 100%), url("../img/section-3.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.section-4 {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(256, 256, 256, 0.85)), to(rgba(256, 256, 256, 0.85))), url("../img/section-2.jpg");
+    background: linear-gradient(90deg, rgba(256, 256, 256, 0.85) 0%, rgba(256, 256, 256, 0.85) 100%), url("../img/section-4.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.section-5 {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(256, 256, 256, 0.85)), to(rgba(256, 256, 256, 0.85))), url("../img/section-2.jpg");
+    background: linear-gradient(90deg, rgba(256, 256, 256, 0.85) 0%, rgba(256, 256, 256, 0.85) 100%), url("../img/section-5.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.section-6 {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(256, 256, 256, 0.85)), to(rgba(256, 256, 256, 0.85))), url("../img/section-2.jpg");
+    background: linear-gradient(90deg, rgba(256, 256, 256, 0.85) 0%, rgba(256, 256, 256, 0.85) 100%), url("../img/section-6.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-7 {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(256, 256, 256, 0.85)), to(rgba(256, 256, 256, 0.85))), url("../img/section-2.jpg");
+    background: linear-gradient(90deg, rgba(256, 256, 256, 0.85) 0%, rgba(256, 256, 256, 0.85) 100%), url("../img/section-7.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-8 {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(256, 256, 256, 0.85)), to(rgba(256, 256, 256, 0.85))), url("../img/section-2.jpg");
+    background: linear-gradient(90deg, rgba(256, 256, 256, 0.85) 0%, rgba(256, 256, 256, 0.85) 100%), url("../img/section-8.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-header {
+    position: relative;
+    margin: 0 auto;
+    max-width: 700px;
+    text-align: center;
+}
+
+.section-header h3 {
+    font-size: 60px;
+    color: #D4AF37;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 45px;
+}
+
+.section-header h3::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: #D4AF37;
+    bottom: 1px;
+    left: calc(50% - 80px);
+}
+
+.section-header h3::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 5px;
+    border-top: 1px solid #D4AF37;
+    border-bottom: 1px solid #D4AF37;
+    border-left: transparent;
+    bottom: -1px;
+    left: calc(50% - 25px);
+}
+
+@media (max-width: 767.98px) {
+    .section-header h3 {
+        font-size: 45px;
+        padding-bottom: 12px;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .section-header h3 {
+        font-size: 30px;
+        padding-bottom: 10px;
+        margin-bottom: 25px;
+    }
+}
+
+/* ================================================= */
+/* ---------------- Story Section ------------------ */
+/* ================================================= */
+
+#story {
+    position: relative;
+    padding: 0;
+    text-align: center;
+}
+
+#story .container {
+    max-width: 600px;
+}
+
+#story h4 {
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+#story a {
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    background: #D4AF37;
+}
+
+#story a:hover {
+    color: #D4AF37;
+    background: #222222;
+}
+
+#story-page {
+    position: relative;
+    padding: 80px 0 30px 0;
+}
+
+#story-page .story-col {
+    padding: 0 45px;
+    margin-bottom: 60px;
+}
+
+#story-page .story-col:nth-child(odd) {
+    text-align: right;
+    border-right: 1px solid #D4AF37;
+}
+
+@media (max-width: 767.98px) {
+    #story-page .story-col {
+        padding: 0 15px;
+        margin-bottom: 45px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #story-page .story-col,
+    #story-page .story-col:nth-child(odd) {
+        text-align: center;
+        border-right: none
+    }
+}
+
+#story-page h4 {
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+#story-page h5 {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+#story-page h5 span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: #333333;
+}
+
+#story-page .story-col p:last-child {
+    margin-bottom: 0;
+}
+
+/* ================================================= */
+/* ----------------- Gallery Style ----------------- */
+/* ================================================= */
+
+#gallery {
+    position: relative;
+    padding: 0;
+    text-align: center;
+}
+
+#gallery .container {
+    max-width: 600px;
+}
+
+#gallery .gallery {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#gallery .gallery-nav {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#gallery .gallery img {
+    margin: 5px;
+    width: calc(100% - 10px);
+    border-radius: 200px;
+    box-shadow: 0 0 0 0px #fff inset, 0 0 5px 0 rgba(000, 000, 000, 0.5);
+}
+
+#gallery .gallery-nav img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+#gallery .gallery-nav .slick-track {
+    padding: 20px 0;
+}
+
+#gallery .gallery-nav .slick-center img {
+    box-shadow: 0 0 0 0px #fff inset, 0 0 5px 0 rgba(000, 000, 000, 0.5);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+/* ================================================= */
+/* ---------------- Party Section ------------------ */
+/* ================================================= */
+
+#party {
+    position: relative;
+    padding: 0;
+    text-align: center;
+}
+
+#party .container {
+    max-width: 700px;
+}
+
+#party .col-6 {
+    padding: 0 60px;
+}
+
+@media (max-width: 767.98px) {
+    #party .col-6 {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #party .col-6 {
+        padding: 0 15px;
+    }
+}
+
+#party .text-right {
+    border-right: 1px solid #D4AF37;
+}
+
+#party h4 {
+    letter-spacing: 2px;
+}
+
+#party p {
+    margin-bottom: 0;
+}
+
+#party a {
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    background: #D4AF37;
+    margin-top: 45px;
+}
+
+#party a:hover {
+    color: #D4AF37;
+    background: #222222;
+}
+
+/* ================================================= */
+/* ---------------- Place Section ------------------ */
+/* ================================================= */
+
+#place {
+    position: relative;
+    padding: 0;
+    text-align: center;
+}
+
+#place .container {
+    max-width: 900px;
+}
+
+#place .col-6 {
+    padding: 0 60px;
+}
+
+@media (max-width: 767.98px) {
+    #place .col-6 {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #place .col-6 {
+        padding: 0 15px;
+    }
+}
+
+#place .text-right {
+    border-right: 1px solid #D4AF37;
+}
+
+#place h4 {
+    letter-spacing: 2px;
+}
+
+#place p {
+    margin-bottom: 0;
+}
+
+#place a {
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    background: #D4AF37;
+    margin-top: 45px;
+}
+
+#place a:hover {
+    color: #D4AF37;
+    background: #222222;
+}
+
+/* ================================================= */
+/* --------------- Registry Section ---------------- */
+/* ================================================= */
+
+#registry {
+    position: relative;
+    padding: 0;
+    text-align: center;
+}
+
+#registry .container {
+    max-width: 700px;
+}
+
+#registry h4 {
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+#registry .form-control {
+    border-radius: 30px;
+    border-color: #D4AF37;
+    box-shadow: none;
+}
+
+#registry .form-control:focus {
+    border-color: #222222;
+}
+
+#registry button {
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    background: #D4AF37;
+    border: none;
+    cursor: pointer;
+}
+
+#registry button:hover {
+    color: #D4AF37;
+    background: #222222;
+}
+
+/* ================================================= */
+/* ----------------- RSVP Section ------------------ */
+/* ================================================= */
+
+#rsvp {
+    position: relative;
+    padding: 0;
+    text-align: center;
+}
+
+#rsvp .container {
+    max-width: 700px;
+}
+
+#rsvp h4 {
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+#rsvp .form-control {
+    border-radius: 30px;
+    border-color: #D4AF37;
+    box-shadow: none;
+}
+
+#rsvp .form-control:focus {
+    border-color: #222222;
+}
+
+#rsvp button {
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    background: #D4AF37;
+    border: none;
+    cursor: pointer;
+}
+
+#rsvp button:hover {
+    color: #D4AF37;
+    background: #222222;
+}
+
+/* ================================================= */
+/* -------------- CountDown Section ---------------- */
+/* ================================================= */
+
+#clock {
+    position: relative;
+    padding: 0;
+    text-align: center;
+}
+
+#clock .section-header h3 {
+    margin-bottom: 65px;
+}
+
+@media (max-width: 767.98px) {
+    #clock .clock {
+        position: relative;
+        zoom: .7;
+        transform: scale(.64);
+        -ms-transform: scale(.64);
+        -webkit-transform: scale(.64);
+        -o-transform: scale(.64);
+        -moz-transform: scale(.64);
+    }
+}
+
+@media (max-width: 575.98px) {
+    #clock .clock {
+        position: relative;
+        zoom: .5;
+        transform: scale(.44);
+        -ms-transform: scale(.44);
+        -webkit-transform: scale(.44);
+        -o-transform: scale(.44);
+        -moz-transform: scale(.44);
+    }
+}
+
+#clock .flip-clock-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#clock .flip-clock-label {
+    top: -35px;
+    color: #D4AF37;
+    font-size: 25px;
+}
+
+#clock .flip-clock-divider.days .flip-clock-label {
+  right: -100px; 
+}
+
+#clock .flip-clock-divider.hours .flip-clock-label {
+  right: -105px; 
+}
+
+#clock .flip-clock-divider.minutes .flip-clock-label {
+  right: -115px; 
+}
+
+#clock .flip-clock-divider.seconds .flip-clock-label {
+  right: -118px; 
+}
+
+#clock .flip-clock-dot {
+    background: #D4AF37;
+}
+
+.flip-clock-wrapper ul li a div div.inn {
+    color: #ffffff;
+    background: #D4AF37;
+}
+
+/* ================================================= */
+/* ------------------ Login Style ------------------ */
+/* ================================================= */
+
+#login {
+    position: relative;
+    padding: 80px 0 90px 0;
+    text-align: center;
+}
+
+#login .form {
+    background: #fff;
+    color: #666666;
+    font-weight: 400;
+}
+
+@media (max-width: 767.98px) {
+    #login .form:first-child {
+        margin-bottom: 60px;
+    }
+}
+
+#login .form input {
+    padding: 10px 14px;
+    border-radius: 30px;
+    border-color: #D4AF37;
+    box-shadow: none;
+    font-size: 16px;
+}
+
+#login .form input:focus {
+    border-color: #222222;
+}
+
+#login .form button[type="submit"] {
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    background: #D4AF37;
+    padding: 9px 30px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#login .form button[type="submit"]:hover {
+    background: #222222;
+    color: #D4AF37;
+}
+
+.custom-control-label:before{
+    background: #ffffff;
+    border: 1px solid #D4AF37;
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label::before,
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background: #222222;
+    border: 1px solid #222222;
+}
+
+.custom-radio .custom-control-input:focus~.custom-control-label::before,
+.custom-checkbox .custom-control-input:focus~.custom-control-label::before {
+    box-shadow: none;
+    border: 1px solid #222222;
+}
+
+/* ================================================= */
+/* ----------------- Contact Style ----------------- */
+/* ================================================= */
+
+#contact {
+    position: relative;
+    padding: 80px 0 90px 0;
+    text-align: center;
+}
+
+#contact .container {
+    max-width: 900px;
+}
+
+#contact .contact-info {
+    margin-bottom: 15px;
+}
+
+#contact .contact-info i {
+    font-size: 35px;
+    color: #D4AF37;
+    margin-bottom: 20px;
+}
+
+#contact .contact-info h3 {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+#contact .form {
+    background: #fff;
+    color: #666666;
+    font-weight: 400;
+}
+
+#contact .form input,
+#contact .form textarea {
+    padding: 10px 14px;
+    border-radius: 30px;
+    border-color: #D4AF37;
+    box-shadow: none;
+    font-size: 16px;
+}
+
+#contact .form input:focus,
+#contact .form textarea:focus {
+    border-color: #222222;
+}
+
+#contact .form button[type="submit"] {
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    background: #D4AF37;
+    padding: 9px 30px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#contact .form button[type="submit"]:hover {
+    background: #222222;
+    color: #D4AF37;
+}
+
+@media (max-width: 575.98px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        letter-spacing: 0 !important;
+    }
+}
